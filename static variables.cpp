@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+void f()
+{
+    static int x = 0;
+    x++;
+    cout << "X is " << x << endl;
+}
+int main()
+{
+    f();
+    f();
+    f();
+    f();
+}
